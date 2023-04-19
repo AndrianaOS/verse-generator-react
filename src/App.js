@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Header";
-import InfoSection from "./InfoSection";
+import WelcomePage from "./WelcomePage";
 import GodsIdentity from "./GodsIdentity";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -12,12 +12,15 @@ import Transformation from "./Transformation";
 import Blessings from "./Blessings";
 import Ministry from "./Ministry";
 import Governance from "./Governance";
+import Help from "./Help";
+import Healing from "./Healing";
+import Discipline from "./Discipline";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <InfoSection />
+
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -30,19 +33,13 @@ function App() {
           <Route path="/blessings" element={<Blessings />} />
           <Route path="/ministry" element={<Ministry />} />
           <Route path="/governance" element={<Governance />} />
-          {/* <Route path="/" element={<All />} /> */}
+          <Route path="/help" element={<Help />} />
+          <Route path="/healing" element={<Healing />} />
+          <Route path="/discipline" element={<Discipline />} />
         </Routes>
       </BrowserRouter>
       {/* <GodsIdentity /> */}
     </div>
-  );
-}
-
-function WelcomePage() {
-  return (
-    <section>
-      <p>Welcome </p>
-    </section>
   );
 }
 

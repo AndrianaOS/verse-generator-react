@@ -36,3 +36,98 @@
     transform: rotate(360deg);
   }
 }
+
+header {
+  margin-top: 1em;
+  height: 10em;
+  background-repeat: round;
+  width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  /* font-family: "Berkshire Swash", cursive; */
+  font-family: "Cinzel Decorative", cursive;
+  /* font-family: "Tangerine", cursive; */
+  padding-top: 0.7em;
+  margin-bottom: 2em;
+  background-image: url(http://clipart-library.com/images_k/open-book-transparent-background/open-book-transparent-background-7.png);
+}
+
+.offcanvas {
+  width: 55%;
+  background: lightgray;
+  position: fixed;
+  /* bottom: -2em; */
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  opacity: 0.8;
+  top: 1em;
+}
+
+.offcanvas:hover {
+  opacity: 1;
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+  font-size: 1.2em;
+}
+
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1em;
+}
+
+.nav-item {
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 1.1em;
+}
+
+.info {
+  margin: 1em;
+  padding: 0.5em;
+}
+
+.quote-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  margin-top: 1em;
+}
+
+.menu-btn {
+  font-size: 1.3em;
+  margin-left: 0.2em;
+  padding: 0.4em;
+  border: none;
+}
+
+.generate {
+  padding: 0.7em;
+  font-size: 1.1em;
+  border: none;
+  margin-top: 1em;
+}
+
+.verses {
+  margin: 1em;
+  height: 14em;
+  padding: 0.5em;
+}
+
+.btn-close {
+  position: absolute;
+  right: 2em;
+  height: 2em;
+  width: 2em;
+  opacity: 0;
+}
