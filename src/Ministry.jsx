@@ -24,6 +24,7 @@ function Ministry() {
         "Please wait while we load verses"
       ) : (
         <aside className="verses">
+          <h3>Ministry</h3>
           <p>{showVerses.verse}</p>
           <span>{showVerses.scripture}</span>
         </aside>

@@ -21,7 +21,7 @@ function Links({ name, ...props }) {
   const toggleShow = () => setShow((s) => !s);
 
   return (
-    <nav>
+    <nav className="container-fluid">
       <Button variant="primary" onClick={toggleShow} className="menu-btn">
         Click for Verses Link
       </Button>
@@ -31,6 +31,7 @@ function Links({ name, ...props }) {
           <Offcanvas.Title>Verses Menu</Offcanvas.Title>
           <FontAwesomeIcon icon={faXmark} />
         </Offcanvas.Header>
+
         <Offcanvas.Body>
           <Link to="/" className="nav-item">
             Home
@@ -65,10 +66,55 @@ function Links({ name, ...props }) {
           <Link to="/healing" className="nav-item">
             Healing
           </Link>
+          <Link to="/purpose" className="nav-item">
+            Purpose
+          </Link>
+          <Link to="/boundaries" className="nav-item">
+            Boundaries
+          </Link>
           <Link to="/discipline" className="nav-item">
             Discipline
           </Link>
+          <Link to="/standards" className="nav-item">
+            Standards
+          </Link>
+          <Link to="/repentance" className="nav-item">
+            Repentance
+          </Link>
+          <Link to="/promises" className="nav-item">
+            Promises
+          </Link>
+          <Link to="/grace" className="nav-item">
+            Grace
+          </Link>
+          <Link to="/freedom" className="nav-item">
+            Freedom
+          </Link>
+          <Link to="/marriage" className="nav-item">
+            Marriage
+          </Link>
+          <Link to="/fellowship" className="nav-item">
+            Fellowship
+          </Link>
+          <Link to="/leadership" className="nav-item">
+            Leadership
+          </Link>
           {/* <Link to="/discipline" className="nav-item">
+            Discipline
+          </Link>
+          <Link to="/discipline" className="nav-item">
+            Discipline
+          </Link>
+          <Link to="/discipline" className="nav-item">
+            Discipline
+          </Link>
+          <Link to="/discipline" className="nav-item">
+            Discipline
+          </Link>
+          <Link to="/discipline" className="nav-item">
+            Discipline
+          </Link>
+          <Link to="/discipline" className="nav-item">
             Discipline
           </Link>
           <Link to="/discipline" className="nav-item">

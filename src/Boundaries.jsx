@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-function Salvation() {
+function Boundaries() {
   const [showVerses, setShowVerses] = useState("");
   const [loading, setLoading] = useState(true);
 
   const getRandomVerse = () => {
-    fetch("http://localhost:3005/salvation/random")
+    fetch("http://localhost:3005/boundaries")
       .then((response) => response.json())
       .then((data) => {
         setShowVerses(data);
@@ -24,7 +24,7 @@ function Salvation() {
         "Please wait while we load verses"
       ) : (
         <aside className="verses">
-          <h3>Salvation</h3>
+          <h3>Boundaries</h3>
           <p>{showVerses.verse}</p>
           <span>{showVerses.scripture}</span>
         </aside>
@@ -39,4 +39,4 @@ function Salvation() {
   );
 }
 
-export default Salvation;
+export default Boundaries;

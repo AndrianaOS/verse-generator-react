@@ -24,6 +24,7 @@ function Healing() {
         "Please wait while we load verses"
       ) : (
         <aside className="verses">
+          <h3>Healing</h3>
           <p>{showVerses.verse}</p>
           <span>{showVerses.scripture}</span>
         </aside>

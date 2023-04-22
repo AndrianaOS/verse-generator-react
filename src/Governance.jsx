@@ -24,6 +24,7 @@ function Governance() {
         "Please wait while we load verses"
       ) : (
         <aside className="verses">
+          <h3>Govern Our Bodies</h3>
           <p>{showVerses.verse}</p>
           <span>{showVerses.scripture}</span>
         </aside>

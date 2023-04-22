@@ -24,6 +24,7 @@ function GodsIdentity() {
         "Please wait while we load verses"
       ) : (
         <aside className="verses">
+          <h3>God's Identity</h3>
           <p>{showVerses.verse}</p>
           <span>{showVerses.scripture}</span>
         </aside>

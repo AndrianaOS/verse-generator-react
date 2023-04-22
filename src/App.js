@@ -15,6 +15,16 @@ import Governance from "./Governance";
 import Help from "./Help";
 import Healing from "./Healing";
 import Discipline from "./Discipline";
+import Boundaries from "./Boundaries";
+import Standards from "./Standards";
+import Repentance from "./Repentance";
+import Promises from "./Promises";
+import Grace from "./Grace";
+import Purpose from "./Purpose";
+import Freedom from "./Freedom";
+import Marriage from "./Marriage";
+import Fellowship from "./Fellowship";
+import Leadership from "./Leadership";
 
 function App() {
   return (
@@ -36,6 +46,16 @@ function App() {
           <Route path="/help" element={<Help />} />
           <Route path="/healing" element={<Healing />} />
           <Route path="/discipline" element={<Discipline />} />
+          <Route path="/boundaries" element={<Boundaries />} />
+          <Route path="/standards" element={<Standards />} />
+          <Route path="/repentance" element={<Repentance />} />
+          <Route path="/promises" element={<Promises />} />
+          <Route path="/grace" element={<Grace />} />
+          <Route path="/purpose" element={<Purpose />} />
+          <Route path="/freedom" element={<Freedom />} />
+          <Route path="/marriage" element={<Marriage />} />
+          <Route path="/fellowship" element={<Fellowship />} />
+          <Route path="/leadership" element={<Leadership />} />
         </Routes>
       </BrowserRouter>
       {/* <GodsIdentity /> */}

@@ -20,20 +20,15 @@ function Deliverance() {
 
   return (
     <div className="quote-area">
-      {loading ? (
-        "Please wait while we load verses"
-      ) : (
-        <aside className="verses">
-          <p>{showVerses.verse}</p>
-          <span>{showVerses.scripture}</span>
-        </aside>
-      )}
-
-      <aside>
-        <button onClick={() => getRandomVerse()} className="generate">
-          Regenerate Quote
-        </button>
-      </aside>
+      {loading
+        ? "Please wait while we load verses"
+        : showVerses.map((message, index) => (
+            <aside className="verses" key={index}>
+              <h3>Deliverance</h3>
+              <p>{message.verse}</p>
+              <span>{message.scripture}</span>
+            </aside>
+          ))}
     </div>
   );
 }
