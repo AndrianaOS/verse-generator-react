@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <h1>Verse Generator</h1>
+      <h1>Bible Verses</h1>
     </header>
   );
 }

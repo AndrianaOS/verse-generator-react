@@ -32,7 +32,7 @@ function Promises() {
 
       <aside>
         <button onClick={() => getRandomVerse()} className="generate">
-          Regenerate Quote
+          Regenerate Verse
         </button>
       </aside>
     </div>
